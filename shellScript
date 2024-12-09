@@ -1,0 +1,29 @@
+which python , which java and which bash - give the path of exetable of language
+whereis python - all paths
+#!/path - shbang - put in first line of a code.
+variable - it is a reserved memory location to store values.
+  in bash we have dynamic vaiable, there is no concept of data type.
+  name="Naveen Kumar"
+
+output (to print)
+  echo $name
+  echo "Your name is $name" - Your name is Naveen Kumar
+  echo 'Your name is $name" - Your name is $name   -- single quote don't get the quotation.
+
+input (to get value from user)
+  echo "Where are you from?"
+  #read $city - this wrong, variable don't need $ but while printing need to give
+  read city
+  echo "I am from $city"
+  
+Arthmatic (as bash treat everything as string, so for arthmatic need to define in special way)
+  #!/usr/bin/bash
+  echo "Enter two no. for sumation"
+  read num1
+  read num2
+  sum=`expr $num1 + $num2` 
+  #sum=`expr $num1+$num2` - o/p us num1+num2
+  echo "The sum of above two no. is: $sum"
+  echo $(expr $num1 + $num2)
+  echo `expr $num1 + $num2`
+  echo $((num1 + num2))
