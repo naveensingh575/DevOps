@@ -27,3 +27,4 @@ Arthmatic (as bash treat everything as string, so for arthmatic need to define i
   echo $(expr $num1 + $num2)
   echo `expr $num1 + $num2`
   echo $((num1 + num2))
+  echo " date is : $(date)"
