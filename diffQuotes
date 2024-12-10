@@ -1,0 +1,11 @@
+# '' it keep the literl meaning
+name='Naveen Kumar'
+echo 'My name is $name'
+
+#"" it keep the special meaning
+place="Charkhi Dadri"
+echo 'I am from $place'
+
+#`` to execute command
+time=`date`
+echo $time
