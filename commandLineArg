@@ -1,0 +1,14 @@
+The argument passed with script name are known as command line arguments
+for e.g ./add.sh 2 3
+These can be access by $0 .. $n
+$0 - is the script itself i.e ./add.sh
+$1 - fisrt command line argument value i.e 2
+$2 - second command line argument value i.e 3
+
+add.sh
+#!/usr/bin/bash
+echo $0
+echo $1
+echo $2
+num=`expr $1 + $2`
+echo "the sum of two number is $num"
