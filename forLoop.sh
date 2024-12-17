@@ -25,3 +25,21 @@ done
 #do
 #        echo "Creating VM $num"
 #done
+
+#to validate files are executable or not
+echo "Enter the Folder name, whose files need to check"
+read folderName
+files=`ls $folderName`
+
+echo ${files[@]}
+
+for file in ${files[@]}
+do
+        if [[ -x $file ]]
+        then
+                echo $file is executable
+        else
+                echo $file is not executable
+        fi
+done
+
