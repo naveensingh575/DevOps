@@ -1,7 +1,0 @@
-Linux commands
-command -options arguments
-command  like cp, mv, chmod, chown, chgrp, ls, pwd, hostname, whoami, w etc.
-Option start with -.
-  some commands except multiple options other single.
-argument the object on which command run.
-  some command except multiple option and some single .
