@@ -1,0 +1,21 @@
+# '' it keep the literl meaning
+name='Naveen Kumar'
+echo 'My name is $name'
+
+#"" it keep the special meaning
+place="Charkhi Dadri"
+echo 'I am from $place'
+
+#`` to execute command
+time=`date`
+echo $time
+
+#!/usr/bin/bash
+cmpn=Infosys
+echo $cmpn
+echo "you are working in which company?"
+read company
+echo "I am working in $company"
+echo 'I am working in $comapny'
+echo "I have total `expr 1 + 2` years of experince"
+echo I am working in \$comapny
