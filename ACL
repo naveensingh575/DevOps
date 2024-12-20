@@ -1,6 +1,0 @@
-acl control list
-setfacl - to set the permission and getfacl - to get the permission
-setfacl -m u:userName:rwx filePath/fileName - user
-setfacl -m g:groupName:rwx filePath/fileName - group
-setfacl -Rm filePath/fileName - to remove acl permission
-getfacl fileName - to inquire acl permissions.
