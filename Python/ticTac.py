@@ -5,11 +5,16 @@ while i <= 9:
     value = input("please tell X or O : " )
     position = input("please tell the position :")
     print(value)
-    print(position)
-    if ticTac[position] != "":
+    print(int(position))
+    print(int(int(position) -1))
+    if ticTac[int(int(position) -1)] == "":
         if value == "X" or  value == "O":
-            ticTac[position] = value
+            ticTac[int(int(position) -1)] = value
+            print(ticTac[int(int(position) -1)])
+            i = i +1
         else:
-            Print(value + "is the invalid input")
+            print(value + " is the invalid input")
     else:
         print("the value already exist")
+
+print(ticTac)    
