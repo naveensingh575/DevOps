@@ -3,7 +3,6 @@
 # do
 #    statement
 # done
-
 #for e.g
 #!/usr/bin/bash
 echo "please enter the number"
@@ -14,10 +13,3 @@ do
     number=$(( number+1 ))
 done
 echo "loop is completed"
-
-
-
-
-
-
-
