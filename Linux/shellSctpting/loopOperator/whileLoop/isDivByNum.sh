@@ -12,10 +12,9 @@ do
 	then
 		echo " $i is divisible by $num "	
 		i=` expr $i + 1 `
-	#	echo " $i "
+	# echo " $i "
 		continue
 	fi
 	echo " $i is non divisible no by $num"
-	i=` expr $i + 1 `
-        
+	i=` expr $i + 1 `	
 done
