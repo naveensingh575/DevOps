@@ -25,4 +25,8 @@ while i <= 9:
     else:
         print(position + " is invalid position input")
 
+#print(f'{ticTac[0]}  {ticTac[1]}  {ticTac[2]}')
+#print(f'{ticTac[3]}  {ticTac[4]}  {ticTac[5]}')
+#print(f'{ticTac[6]}  {ticTac[7]}  {ticTac[8]}')
+
 print(ticTac)    
