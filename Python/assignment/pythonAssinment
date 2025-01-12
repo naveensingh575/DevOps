@@ -1,0 +1,72 @@
+#assignment
+1. Check the value of variables from shell with and without print function
+a) Open python shell (at command prompt or terminal type python)
+b) Create a new variable called `project_config` and assign it the value of "project:
+DevOps\nstatus: active\ntasks: 10"
+c) Display the variable value just typing the variable name
+d) Print the variable value using the built-in print function
+e) Note the difference
+
+
+project_config = "project:DevOps\nstatus: active\ntasks: 10"
+
+project_config
+'project:DevOps\nstatus: active\ntasks: 10'
+
+print(project_config)
+project:DevOps
+status: active
+tasks: 10
+
+#the direct use of variable ignore the \n new line. but print interpret the \n new line charecter.
+#direct execute by repr() and print by str()
+
+2. String comparison
+a) Define the project_name variable and store the value 'DevOps-Project-A' in it.
+b) Read another project name from the user as input and store it in a variable
+`new_project_name`.
+c) Compare if both values are the same and print "Project already exists", if they are
+same. Else print "New project added to inventory."
+d) Note: "PROJECT-A" and "project-a" are the same as far as your application is
+concerned. So keep this in mind while doing the comparison.
+
+project_name = "DEVOPS-Project-A"
+project = ["DEVOPS-Project-A"]
+new_project_name = input("Please suggest a new project? ")
+if project_name.casefold() == new_project_name.casefold():
+    print("This project already exists")
+else:
+    print("New project added to inventory.")
+    project.append(new_project_name)
+print(project)
+
+
+3. String replacement
+a) Create a new variable called `build_version` and assign it the value of "10.1.18".
+b) From the above string replace the third (only the third) segment with 34.
+c) After replacement the version should look like 10.1.34
+
+build_version = "10.1.18"
+build_version = build_version.replace('18','34')
+print(build_version)
+
+4. String split
+a) Now split the above build version to get its individual segments and store them in a
+list variable "segments".
+b) Print the elements of segments list using index notation.
+c) Print them in reverse now, again using index notation.
+
+build_version = "10.1.18"
+segment = build_version.split('.')
+print(segment)
+#print(f"length of list {len(segment)}")
+def displayList(listName):
+    i = 0
+    while i < len(listName):
+        print(listName[i])
+        i += 1
+
+displayList(segment)
+segment.reverse()
+print(f"revese string {segment}")
+displayList(segment)
