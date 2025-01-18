@@ -70,3 +70,94 @@ displayList(segment)
 segment.reverse()
 print(f"revese string {segment}")
 displayList(segment)
+
+5. String and number manipulation:
+a) Take two inputs from the user. Budget amount and percentage allocation.
+b) Budget amount will be entered as $5000.00 and percentage as 20%.
+c) Store them in two float variables (ignoring $ and % signs).
+d) Calculate the total allocation amount (budget * percentage).
+
+
+budgetAmt = input(f"Please enter amountof budget ")
+allocationPercentage = input(f"Please input the percentage of budget need to allocate ")
+budgetAmt = float(budgetAmt[1:])
+allocationPercentage = float(allocationPercentage[:-2])
+
+totalAllocationAmt = (budgetAmt * allocationPercentage)/100
+print(totalAllocationAmt)
+
+or
+
+#More accurate, it have handel the case whre u don't pass $ in sraertor % atlast also
+
+budgetAmt = input(f"Please enter budget amount: ")
+allocationPercentage = input(f"Please input the percentage of budget need to allocate: ")
+budgetAmt = float(budgetAmt.removeprefix('$'))
+print( f"The allocated budeget amount is $ {budgetAmt}")
+allocationPercentage = float(allocationPercentage.removesuffix('%'))
+print(f"The allocated percentage is {allocationPercentage}%")
+totalAllocationAmt = (budgetAmt * allocationPercentage)/100
+print(f"The total alloacted amount is ${totalAllocationAmt}, Jitni chadar utne hi pair falaye. Ok greeb :)") 
+
+
+6. Write a Python program to count the number of characters (character frequency) in a
+string.
+a) Sample String : 'devops.example.com'
+b) Expected Result : {'d': 1, 'e': 3, 'v': 1, 'o': 2, 'p': 1, 's': 1, '.': 2, 'x': 1, 'a': 1, 'm': 2, 'l': 1,
+'c': 1}
+
+def CountNoOfOccrn(str):
+    str = str.casefold()
+    str = str.upper()
+    i = 0
+    dict = {}
+    while i < len(str):
+        count = str.count(str[i])
+        dict[str[i]] = count
+        dict = dict
+        i += 1
+    try:
+            print(dict.pop(' '))
+    except:
+            pass
+    return print(dict)
+
+sample_str = input("Please enter the string whom latter you want to count: ")
+CountNoOfOccrn(sample_str)
+
+7. Write a Python function that takes a list of words and return the longest word and the
+length of the longest one.
+a) Sample Output:
+b) Longest word: Exercises
+c) Length of the longest word: 9
+
+#list = ["Naveen","Saurabh","Akashi","Gaurav","Navi Kumar"]
+#list = input("Please enter the list ")
+#list = list(list)
+#print(list)
+
+list = []
+goOn = 'Y'
+while goOn == "Y":
+    wrd = input("Please enter the word ")
+    goOn = input("is more words you want to input option [Y for Yes , N or other latter for No] ")
+    goOn = goOn.upper()
+    list.append(wrd)
+print(list)
+
+#defining the function of longest word identifing
+def lngstwrd(listwrd):
+    i = 0
+    longest  = 0
+    longestWrd = ""
+    while i < len(listwrd):
+        lngth = len(listwrd[i])
+        if lngth > longest :
+            longest = lngth
+            longestWrd = listwrd[i]
+        i += 1
+    print(f"Longest word: {longestWrd}")
+    print(f"Length of the longest word: {longest}")
+
+# calling the function
+lngstwrd(list)
