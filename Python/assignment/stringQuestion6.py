@@ -21,4 +21,5 @@ def CountNoOfOccrn(str):
     return print(dict)
 
 sample_str = input("Please enter the string whom latter you want to count: ")
-CountNoOfOccrn(sample_str)
+output = CountNoOfOccrn(sample_str)
+print(output)
