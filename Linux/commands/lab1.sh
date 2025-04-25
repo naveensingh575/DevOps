@@ -1,4 +1,5 @@
 #we will do first lab
+#task
 #1. add user 
 #2. check password by tail
 #3. set passwrd
